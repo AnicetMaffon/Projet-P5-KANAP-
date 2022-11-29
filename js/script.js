@@ -1,5 +1,3 @@
-
-
 //Récupération des données de l'Api
 fetch("http://localhost:3000/api/products")
   .then(function (res) {
@@ -17,7 +15,7 @@ fetch("http://localhost:3000/api/products")
     for (const product of products){
         document.getElementById(
             "items"
-          ).innerHTML += `<a href="./product.html?id =${product._id}">
+          ).innerHTML += `<a href="./product.html?id=${product._id}">
           <article>
           <img src ="${product.imageUrl}" alt = "${product.altTxt}">
           <h3 class = "productName"> ${product.name}</h3>
